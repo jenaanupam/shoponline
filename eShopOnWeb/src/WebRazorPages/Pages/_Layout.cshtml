@@ -73,7 +73,7 @@
                 display: block;
                 color: #f2f2f2;
                 text-align: center;
-                padding: 10px 13px;
+                padding: 3px 5px;
                 text-decoration: none;
                 font-weight: 500;
                 font-family: "Times New Roman", Times, serif;
@@ -94,7 +94,7 @@
 
 
         <div class="topnav">
-            <p href="#" style="float:left;font-weight: 600;color: #f2f2f2;padding: 3px 5px;font-family:Times New Roman, Times, serif;font-size: 13px;">Welcome Guest!</p>
+           
             <form>
                 <a href="#" style="float:right;margin-right:10px;">Need Help?</a>
                 <a href="#" style="float:right;margin-right:10px;">Locator</a>
@@ -133,21 +133,24 @@
             <form asp-controller="Account" asp-action="Logout" method="post" id="logoutForm">
                 <div style="float:right;margin-right:10px;">
                     @{
-                        if (string.IsNullOrEmpty(ViewBag.LoginPartialPath))
-                        {
+            if (string.IsNullOrEmpty(ViewBag.LoginPartialPath))
+            {
                 @await Component.InvokeAsync("Basket")
-                        }
-                        else
-                        {
-                            string k = ViewBag.LoginPartialPath;
+}
+else
+{
+    string k = ViewBag.LoginPartialPath;
             @await Component.InvokeAsync("Basket");
 }
                     }
-                    </div>
-                    <a href="javascript:document.getElementById('logoutForm').submit()" style="float:right;margin-right:10px;">Log Out</a>
-                    <a asp-page="/Account/Manage/Index" style="float:right;margin-right:10px;">Account</a>
-                    <a asp-page="/Order/Index" style="float:right;margin-right:10px;">My orders</a>
-                    <a href="/admin/index" style="float:right;margin-right:10px;">Admin</a>
+                </div>
+                <a href="javascript:document.getElementById('logoutForm').submit()" style="float:right;margin-right:10px;">Log Out</a>
+                <a asp-page="/Account/Manage/Index" style="float:right;margin-right:10px;">Account</a>
+                <a asp-page="/Order/Index" style="float:right;margin-right:10px;">My orders</a>
+                <a href="/admin/index" style="float:right;margin-right:10px;">Admin</a>
+
+                <p style="float:right;font-weight: 600;color: #f2f2f2;padding: 3px 5px;font-family:Times New Roman, Times, serif;font-size: 13px;float:right;">Guest!</p>
+                 
             </form>
                         }
                         else
@@ -155,20 +158,22 @@
             <form asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
                 <div style="float:right;margin-right:10px;">
                     @{
-                        if (string.IsNullOrEmpty(ViewBag.LoginPartialPath))
-                        {
+            if (string.IsNullOrEmpty(ViewBag.LoginPartialPath))
+            {
                 @await Component.InvokeAsync("Basket")
-                        }
-                        else
-                        {
-                            string k = ViewBag.LoginPartialPath;
+}
+else
+{
+    string k = ViewBag.LoginPartialPath;
             @await Component.InvokeAsync("Basket");
-                            }
-                        }
-                    </div>
-                    <a asp-page="/Account/Signin" style="float:right;margin-right:10px;">
-                        Login
-                    </a>
+}
+                    }
+                </div>
+                <a asp-page="/Account/Signin" style="float:right;margin-right:10px;">
+                    Login
+                </a>
+                <p style="float:left;font-weight: 600;color: #f2f2f2;padding: 3px 5px;font-family:Times New Roman, Times, serif;font-size: 13px;float:right;">Guest!</p>
+                 
 
 
 
