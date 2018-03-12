@@ -18,6 +18,9 @@
         width: 13px;
         padding: 0
     }
+    .hidebrand{
+        display:none;
+    }
 </style>
 <section>
     @*<div class="container">
@@ -43,7 +46,7 @@
 <section class="esh-catalog-filters backgroundappcolor">
     <div class="container">
         <form method="get">
-            <label class="esh-catalog-label" data-title="brand">
+            <label class="esh-catalog-label hidebrand" data-title="brand">
                 <select asp-for="@Model.CatalogModel.BrandFilterApplied" asp-items="@Model.CatalogModel.Brands" class="esh-catalog-filter"></select>
             </label>
             <label class="esh-catalog-label" data-title="type">
