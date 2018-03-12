@@ -5,237 +5,232 @@
     Layout = "~/Pages/_Layout.cshtml";
     string disabled = ViewBag.Buttondisabled == null ? "" : "";
 }
-
-@using (Html.BeginForm("submittheform", "Admin", FormMethod.Post, new {enctype = "multipart/form-data"}))
-
-{
-
-
-    <div id="formdatadiv" style="width:80%;">
-        <div id="userformdata">
-            <table>
-                <tr>
-                    <td>Form ID : </td>
-                    <td>@ViewBag.FormId</td>
-                </tr>
-            </table>
-            <button class="collapsible" onclick="return false;">Seller Acknowledgement</button>
-            <div class="content">
-                <table>
-                    <tr>
-                        <td style="width: 120px;">Reg. No. : </td>
-                        <td style="width: 100px;">@Html.TextBoxFor(m => m.RegNo, htmlAttributes: new { @class = "form_field" })</td>
-                        <td style="width: 100px;"></td>
-                        <td style="width: 120px;">SN No. : </td>
-                        <td style="width: 100px;">@Html.TextBoxFor(m => m.SnNo, htmlAttributes: new { @class = "form_field", placeholder = "For New Seller" })</td>
-                    </tr>
-                    <tr>
-                        <td>Area Code : </td>
-                        <td>@Html.TextBoxFor(m => m.AreaCode, htmlAttributes: new { @class = "form_field" })</td>
-                        <td></td>
-                        <td>Comments : </td>
-                        <td>@Html.TextBoxFor(m => m.Comments, htmlAttributes: new { @class = "form_field" })</td>
-                    </tr>
-                </table>
-            </div>
-            <br />
-            <button class="collapsible" onclick="return false;">Campaign Code</button>
-            <div class="content">
-                <table>
-                    <tr>
-                        <td style="width: 120px;">Brand : </td>
-                        <td style="width: 100px;">@Html.TextBoxFor(m => m.OfferType, htmlAttributes: new { @class = "form_field" })</td>
-                        <td style="width: 100px;"></td>
-                        <td style="width: 120px;">Type : </td>
-                        <td style="width: 100px;">@Html.TextBoxFor(m => m.OfferSubtype1, htmlAttributes: new { @class = "form_field" })</td>
-                    </tr>
-                    <tr>
-                        <td>CTR : </td>
-                        <td>@Html.TextBoxFor(m => m.OfferSubtype2, htmlAttributes: new { @class = "form_field" })</td>
-                        <td></td>
-                        <td>Pay-Per Click : </td>
-                        <td>@Html.TextBoxFor(m => m.OfferSubtype3, htmlAttributes: new { @class = "form_field" })</td>
-                    </tr>
-                    <tr>
-                        <td>Name : </td>
-                        <td>@Html.TextBoxFor(m => m.Name, htmlAttributes: new { @class = "form_field" })</td>
-                        <td></td>
-                        <td>Description : </td>
-                        <td>@Html.TextBoxFor(m => m.Description, htmlAttributes: new { @class = "form_field" })</td>
-                    </tr>
-                    <tr>
-                        <td>Brand : </td>
-                        <td>
-                            @Html.DropDownListFor(m => m.CatalogBrand, new SelectList(new List<CatalogBrand>()
-                                                                            {
-                                                                                new CatalogBrand() { Brand = "Azure",Id=1},
-                                                                                new CatalogBrand() { Brand = ".NET",Id=2 },
-                                                                                new CatalogBrand() { Brand = "Visual Studio",Id=3 },
-                                                                                new CatalogBrand() { Brand = "SQL Server",Id=4 },
-                                                                                new CatalogBrand() { Brand = "Other",Id=5 }
-                                                                            }, "Id", "Brand"), " ")
-                        </td>
-                        <td></td>
-                        <td>Type : </td>
-                        <td>
-                            @Html.DropDownListFor(m => m.CatalogType, new SelectList(new List<CatalogType>()
-                                                                            {
-                                                                                new CatalogType() { Type = "Mug",Id=1},
-                                                                                new CatalogType() { Type = "T-Shirt",Id=2 },
-                                                                                new CatalogType() { Type = "Sheet" ,Id=3},
-                                                                                new CatalogType() { Type = "USB Memory Stick" ,Id=4}
-                                                                            }, "Id", "Type"), " ")
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Price : </td>
-                        <td>
-                            @Html.TextBoxFor(m => m.Price, htmlAttributes: new { @class = "form_field" })
-                        </td>
-                        <td></td>
-                        <td>File : </td>
-                        <td>
-                           <input type="file" id="file" name="file" />
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <br />
-        <br />
-        <div style="text-align:center;margin-top:10px">
-            <input type="submit" class="btn btn-primary" value="Upload Product" id-="SubmitDetail" @ViewBag.Buttondisabled />
-        </div>
-        <br />
-
-    </div>
-}
-
 @{
-    if (@ViewBag.showfilesection == true)
+    if (@ViewBag.showfilesection == false)
     {
-        <div class="content1">
-            <div style="height:300px;  border-color:black; border-top:solid;">
-                <br />
-                @Html.Partial("~/Pages/Admin/_FileUpload.cshtml")
+        @using (Html.BeginForm("submittheform", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+
+        {
 
 
-                <div style="text-align:center;margin:auto;">
-                    <table style="margin:auto;">
+            <div id="formdatadiv" style="width:80%;">
+                <div id="userformdata">
+                    <table>
                         <tr>
-                            <td style="height:100px;">
-
-                                <input type="submit" class="btn btn-primary" onclick="completepage();" value="Complete" id-="completethisbutton" />
-                            </td>
+                            <td>Form ID : </td>
+                            <td>@ViewBag.FormId</td>
                         </tr>
                     </table>
+                    <button class="collapsible" onclick="return false;">Seller Acknowledgement</button>
+                    <div class="content">
+                        <table>
+                            <tr>
+                                <td style="width: 120px;">Reg. No. : </td>
+                                <td style="width: 100px;">@Html.TextBoxFor(m => m.RegNo, htmlAttributes: new { @class = "form_field" })</td>
+                                <td style="width: 100px;"></td>
+                                <td style="width: 120px;">SN No. : </td>
+                                <td style="width: 100px;">@Html.TextBoxFor(m => m.SnNo, htmlAttributes: new { @class = "form_field", placeholder = "For New Seller" })</td>
+                            </tr>
+                            <tr>
+                                <td>Area Code : </td>
+                                <td>@Html.TextBoxFor(m => m.AreaCode, htmlAttributes: new { @class = "form_field" })</td>
+                                <td></td>
+                                <td>Comments : </td>
+                                <td>@Html.TextBoxFor(m => m.Comments, htmlAttributes: new { @class = "form_field" })</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br />
+                    <button class="collapsible" onclick="return false;">Campaign Code</button>
+                    <div class="content">
+                        <table>
+                            <tr>
+                                <td style="width: 120px;">Brand : </td>
+                                <td style="width: 100px;">@Html.TextBoxFor(m => m.OfferType, htmlAttributes: new { @class = "form_field" })</td>
+                                <td style="width: 100px;"></td>
+                                <td style="width: 120px;">Type : </td>
+                                <td style="width: 100px;">@Html.TextBoxFor(m => m.OfferSubtype1, htmlAttributes: new { @class = "form_field" })</td>
+                            </tr>
+                            <tr>
+                                <td>CTR : </td>
+                                <td>@Html.TextBoxFor(m => m.OfferSubtype2, htmlAttributes: new { @class = "form_field" })</td>
+                                <td></td>
+                                <td>Pay-Per Click : </td>
+                                <td>@Html.TextBoxFor(m => m.OfferSubtype3, htmlAttributes: new { @class = "form_field" })</td>
+                            </tr>
+                            <tr>
+                                <td>Name : </td>
+                                <td>@Html.TextBoxFor(m => m.Name, htmlAttributes: new { @class = "form_field" })</td>
+                                <td></td>
+                                <td>Description : </td>
+                                <td>@Html.TextBoxFor(m => m.Description, htmlAttributes: new { @class = "form_field" })</td>
+                            </tr>
+                            <tr>
+                                <td>Brand : </td>
+                                <td>
+                                    @Html.DropDownListFor(m => m.CatalogBrand, new SelectList(new List<CatalogBrand>()
+                                                                                            {
+                                                                                                new CatalogBrand() { Brand = "Azure",Id=1},
+                                                                                                new CatalogBrand() { Brand = ".NET",Id=2 },
+                                                                                                new CatalogBrand() { Brand = "Visual Studio",Id=3 },
+                                                                                                new CatalogBrand() { Brand = "SQL Server",Id=4 },
+                                                                                                new CatalogBrand() { Brand = "Other",Id=5 }
+                                                                                            }, "Id", "Brand"), " ")
+                                </td>
+                                <td></td>
+                                <td>Type : </td>
+                                <td>
+                                    @Html.DropDownListFor(m => m.CatalogType, new SelectList(new List<CatalogType>()
+                                                                                            {
+                                                                                                new CatalogType() { Type = "Mug",Id=1},
+                                                                                                new CatalogType() { Type = "T-Shirt",Id=2 },
+                                                                                                new CatalogType() { Type = "Sheet" ,Id=3},
+                                                                                                new CatalogType() { Type = "USB Memory Stick" ,Id=4}
+                                                                                            }, "Id", "Type"), " ")
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Price : </td>
+                                <td>
+                                    @Html.TextBoxFor(m => m.Price, htmlAttributes: new { @class = "form_field" })
+                                </td>
+                                <td></td>
+                                <td>File : </td>
+                                <td>
+                                    <input type="file" id="file" name="file" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-               
+                <br />
+                <br />
+                <div style="text-align:center;margin-top:10px">
+                    <input type="submit" class="btn btn-primary" value="Upload Product" id-="SubmitDetail"  />
+                </div>
+                <br />
+
             </div>
-        </div>
+                 }
+        }
+       else if (@ViewBag.showfilesection == true)
+        {
+                <div class="content1">
+                    <div style="height:300px; ">                       
+                        @Html.Partial("~/Pages/Admin/_FileUpload.cshtml")
+                        @*<div style="text-align:center;margin:auto;">
+                                <table style="margin:auto;">
+                                    <tr>
+                                        <td style="height:100px;">
 
-      
-    }
-}
- 
-<script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+                                            <input type="submit" class="btn btn-primary" onclick="completepage();" value="Complete" id-="completethisbutton" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>*@
+                    </div>
+                </div>
 
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
+
             }
-        });
-    }
-
-    function completepage() {
-        alert("Product added Successfully.");
-        location.href = 'Index';
-
-    }
-</script>
-<style>
-    .center {
-        margin: auto;
-        width: 80%;
-        height: 500px;
-        border: 1px solid #808080;
-        padding: 10px;
-        background-color: white;
-        -webkit-box-shadow: -3px -8px 52px 4px rgba(63,64,63,0.53);
-        -moz-box-shadow: -3px -8px 52px 4px rgba(63,64,63,0.53);
-        box-shadow: -3px -8px 52px 4px rgba(63,64,63,0.53);
-        -webkit-border-radius: 49px 48px 48px 48px;
-        -moz-border-radius: 49px 48px 48px 48px;
-        border-radius: 49px 48px 48px 48px;
-    }
-</style>
-<style>
-    .collapsible {
-        margin: auto;
-        background-color: whitesmoke;
-        cursor: pointer;
-        padding: 18px;
-        width: 80%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        color: #2874f0;
-        font-weight: 700;
-    }
-
-        .active, .collapsible:hover {
-            background-color: lightgrey;
         }
 
-        .collapsible:after {
-            content: '\002B';
-            color: lightgrey;
-            font-weight: bold;
-            float: right;
-            margin-left: 5px;
-        }
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
 
-    .active:after {
-        content: "\2212";
-    }
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
 
-    .content {
-        margin-left: 2px;
-        padding: 0 18px;
-        max-height: 0;
-        overflow-y: hidden;
-        transition: max-height 0.2s ease-out;
-        background-color: white;
-        width: 81%;
-    }
+            function completepage() {
+                alert("Product added Successfully.");
+                location.href = '/admin/index';
+            }
+        </script>
+        <style>
+            .center {
+                margin: auto;
+                width: 80%;
+                height: 500px;
+                border: 1px solid #808080;
+                padding: 10px;
+                background-color: white;
+                -webkit-box-shadow: -3px -8px 52px 4px rgba(63,64,63,0.53);
+                -moz-box-shadow: -3px -8px 52px 4px rgba(63,64,63,0.53);
+                box-shadow: -3px -8px 52px 4px rgba(63,64,63,0.53);
+                -webkit-border-radius: 49px 48px 48px 48px;
+                -moz-border-radius: 49px 48px 48px 48px;
+                border-radius: 49px 48px 48px 48px;
+            }
+        </style>
+        <style>
+            .collapsible {
+                margin: auto;
+                background-color: whitesmoke;
+                cursor: pointer;
+                padding: 18px;
+                width: 80%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+                color: #0641A1;
+                font-weight: 700;
+            }
 
-    table {
-        border-collapse: collapse;
-    }
+                .active, .collapsible:hover {
+                    background-color: lightgrey;
+                }
 
-    td {
-        padding-top: .5em;
-        padding-bottom: .5em;
-        
-        font-size: medium;
-        font-weight: bold;
-    }
+                .collapsible:after {
+                    content: '\002B';
+                    color: lightgrey;
+                    font-weight: bold;
+                    float: right;
+                    margin-left: 5px;
+                }
 
-    .content1 {
-        margin-left: 2px;
-        padding: 0 18px;
-        background-color: white;
-        width: 81%;
-    }
-</style>
+            .active:after {
+                content: "\2212";
+            }
+
+            .content {
+                margin-left: 2px;
+                padding: 0 18px;
+                max-height: 0;
+                overflow-y: hidden;
+                transition: max-height 0.2s ease-out;
+                background-color: white;
+                width: 81%;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            td {
+                padding-top: .5em;
+                padding-bottom: .5em;
+                font-size: medium;
+                font-weight: bold;
+            }
+
+            .content1 {
+                margin-left: 2px;
+                padding: 0 18px;
+                background-color: white;
+                width: 81%;
+            }
+        </style>
 
 
 

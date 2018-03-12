@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="~/css/orders/orders.component.css" />
     <style>
         .backgroundappcolor {
-            background-color: #2874f0;
+            background-color: #0641A1;
         }
 
         .logofloat {
@@ -98,7 +98,7 @@
             <form>
                 <a href="#" style="float:right;margin-right:10px;">Need Help?</a>
                 <a href="#" style="float:right;margin-right:10px;">Locator</a>
-                <a href="#" style="float:right;margin-right:10px;">Weekly Deal</a>
+                <a href="/weeklydeal/index" style="float:right;margin-right:10px;">Weekly Deal</a>
             </form>
         </div>
         @*<div class="topnav2">
@@ -146,12 +146,12 @@ else
                 </div>
                 <a href="javascript:document.getElementById('logoutForm').submit()" style="float:right;margin-right:10px;">Log Out</a>
                 <a asp-page="/Account/Manage/Index" style="float:right;margin-right:10px;">Account</a>
-                <a asp-page="/Order/Index" style="float:right;margin-right:10px;">My orders</a>
-                <a href="/admin/index" style="float:right;margin-right:10px;">Admin</a>
+                <a asp-page="/Order/Index" style="float:right;margin-right:10px;">Shopping History</a>
+                <a href="/admin/index?fileupload=false" style="float:right;margin-right:10px;">Admin</a>
 
-                <p style="float:right;font-weight: 600;color: #f2f2f2;padding: 3px 5px;font-family:Times New Roman, Times, serif;font-size: 13px;float:right;">Guest!</p>
+                <p style="float:right;font-weight: 600;color: #f2f2f2;padding: 3px 5px;font-family:Times New Roman, Times, serif;font-size: 13px;float:right;">@Context.User.Identity.Name</p>
                  
-            </form>
+</form>
                         }
                         else
                         {

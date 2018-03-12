@@ -15,8 +15,16 @@ namespace WebRazorPages.Controllers
     [Route("[controller]/[action]")]
     public class AdminController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(string fileupload)
         {
+            if (fileupload == "true")
+            {
+                ViewBag.showfilesection = true;
+            }
+            else
+            {
+                ViewBag.showfilesection = false;
+            }
             ViewBag.buttoncompletedisable = "disabled";
             ViewBag.LoginPartialPath = "~/Pages/";
             return View("~/Pages/Admin/Index.cshtml");
@@ -24,7 +32,8 @@ namespace WebRazorPages.Controllers
 
         //[HttpPost]
         public IActionResult submittheform(AdminModel adm, IFormFile file)
-        {
+        {        
+
             var files = Request.Form.Files;
             ViewBag.FormId = Guid.NewGuid().ToString().Substring(1,9);
             ViewBag.LoginPartialPath = "~/Pages/";
@@ -42,7 +51,9 @@ namespace WebRazorPages.Controllers
             };
             savetoimagefolder(file);
             inserttodb(cti);
-            return View("~/Pages/Admin/Index.cshtml");
+            ViewBag.showfilesection = false;
+            adm = new AdminModel();
+            return View("~/Pages/Admin/Index.cshtml",adm);
         }
 
         private void inserttodb(CatalogItem cti)
