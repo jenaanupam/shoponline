@@ -66,7 +66,7 @@ namespace Infrastructure.Data
 
         private void ConfigureCatalogBrand(EntityTypeBuilder<CatalogBrand> builder)
         {
-            builder.ToTable("catalogbrand");
+            builder.ToTable("catalogbrandnew");
 
             builder.HasKey(ci => ci.Id);
 
@@ -81,7 +81,7 @@ namespace Infrastructure.Data
 
         private void ConfigureCatalogType(EntityTypeBuilder<CatalogType> builder)
         {
-            builder.ToTable("catalogtype");
+            builder.ToTable("catalogtypenew");
 
             builder.HasKey(ci => ci.Id);
 

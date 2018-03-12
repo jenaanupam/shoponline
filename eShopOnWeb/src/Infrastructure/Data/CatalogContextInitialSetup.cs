@@ -11,7 +11,7 @@ namespace Infrastructure.Data
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL("server=10.0.0.77;port=3306;database=cf_d66b9f8e_07fa_45bc_9eac_dc6f4124756c;user=BojS2T10mqqXrQIg;password=hIxKCVhllAHjaf3z;");
+           optionsBuilder.UseMySQL("server=10.0.0.77;port=3306;database=cf_d66b9f8e_07fa_45bc_9eac_dc6f4124756c;user=BojS2T10mqqXrQIg;password=hIxKCVhllAHjaf3z;");
           //  optionsBuilder.UseMySQL("server=localhost;port=3306;database=testcaseissue;user=root;password=anupam;");
         }
 
@@ -69,7 +69,7 @@ namespace Infrastructure.Data
 
         private void ConfigureCatalogBrand(EntityTypeBuilder<CatalogBrand> builder)
         {
-            builder.ToTable("catalogbrand");
+            builder.ToTable("catalogbrandnew");
 
             builder.HasKey(ci => ci.Id);
 
@@ -84,7 +84,7 @@ namespace Infrastructure.Data
 
         private void ConfigureCatalogType(EntityTypeBuilder<CatalogType> builder)
         {
-            builder.ToTable("catalogtype");
+            builder.ToTable("catalogtypenew");
 
             builder.HasKey(ci => ci.Id);
 

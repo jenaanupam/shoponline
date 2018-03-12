@@ -72,11 +72,11 @@ namespace Infrastructure.Data
         {
             return new List<CatalogBrand>()
             {
-                new CatalogBrand() { Brand = "Azure"},
-                new CatalogBrand() { Brand = ".NET" },
-                new CatalogBrand() { Brand = "Visual Studio" },
-                new CatalogBrand() { Brand = "SQL Server" }, 
-                new CatalogBrand() { Brand = "Other" }
+                new CatalogBrand() {Id=1, Brand = "Azure"},
+                new CatalogBrand() {Id=2, Brand = ".NET" },
+                new CatalogBrand() {Id=3, Brand = "Visual Studio" },
+                new CatalogBrand() {Id=4, Brand = "SQL Server" }, 
+                new CatalogBrand() {Id=5, Brand = "Other" }
             };
         }
 
@@ -84,10 +84,10 @@ namespace Infrastructure.Data
         {
             return new List<CatalogType>()
             {
-                new CatalogType() { Type = "Mug"},
-                new CatalogType() { Type = "T-Shirt" },
-                new CatalogType() { Type = "Sheet" },
-                new CatalogType() { Type = "USB Memory Stick" }
+                new CatalogType() {Id=1, Type = "Mug"},
+                new CatalogType() {Id=2, Type = "T-Shirt" },
+                new CatalogType() { Id=3,Type = "Sheet" },
+                new CatalogType() {Id=4, Type = "USB Memory Stick" }
             };
         }
 

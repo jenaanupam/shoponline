@@ -29,7 +29,7 @@
                                 <td style="width: 100px;">@Html.TextBoxFor(m => m.RegNo, htmlAttributes: new { @class = "form_field" })</td>
                                 <td style="width: 100px;"></td>
                                 <td style="width: 120px;">SN No. : </td>
-                                <td style="width: 100px;">@Html.TextBoxFor(m => m.SnNo, htmlAttributes: new { @class = "form_field", placeholder = "For New Seller" })</td>
+                                <td style="width: 100px;">@Html.TextBoxFor(m => m.SnNo, htmlAttributes: new { @class = "form_field" })</td>
                             </tr>
                             <tr>
                                 <td>Area Code : </td>
@@ -44,13 +44,13 @@
                     <button class="collapsible" onclick="return false;">Campaign Code</button>
                     <div class="content">
                         <table>
-                            <tr>
+                            @*<tr>
                                 <td style="width: 120px;">Brand : </td>
                                 <td style="width: 100px;">@Html.TextBoxFor(m => m.OfferType, htmlAttributes: new { @class = "form_field" })</td>
                                 <td style="width: 100px;"></td>
                                 <td style="width: 120px;">Type : </td>
                                 <td style="width: 100px;">@Html.TextBoxFor(m => m.OfferSubtype1, htmlAttributes: new { @class = "form_field" })</td>
-                            </tr>
+                            </tr>*@
                             <tr>
                                 <td>CTR : </td>
                                 <td>@Html.TextBoxFor(m => m.OfferSubtype2, htmlAttributes: new { @class = "form_field" })</td>
@@ -70,11 +70,11 @@
                                 <td>
                                     @Html.DropDownListFor(m => m.CatalogBrand, new SelectList(new List<CatalogBrand>()
                                                                                             {
-                                                                                                new CatalogBrand() { Brand = "Azure",Id=1},
-                                                                                                new CatalogBrand() { Brand = ".NET",Id=2 },
-                                                                                                new CatalogBrand() { Brand = "Visual Studio",Id=3 },
-                                                                                                new CatalogBrand() { Brand = "SQL Server",Id=4 },
-                                                                                                new CatalogBrand() { Brand = "Other",Id=5 }
+                                                                                                new CatalogBrand() { Brand = "All",Id=1},
+                                                                                                //new CatalogBrand() { Brand = ".NET",Id=2 },
+                                                                                                //new CatalogBrand() { Brand = "Visual Studio",Id=3 },
+                                                                                                //new CatalogBrand() { Brand = "SQL Server",Id=4 },
+                                                                                                //new CatalogBrand() { Brand = "Other",Id=5 }
                                                                                             }, "Id", "Brand"), " ")
                                 </td>
                                 <td></td>

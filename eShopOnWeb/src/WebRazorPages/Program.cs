@@ -20,9 +20,9 @@ namespace Microsoft.eShopWeb.RazorPages
     {
         public static void Main(string[] args)
         {
-           //  Executedbscripts();
+            // Executedbscripts();
             //method to create tables
-         //   entitycreationcumseeding();
+          //  entitycreationcumseeding();
             Console.WriteLine("mysqlentity sleeping for 5 sec");
             System.Threading.Thread.Sleep(5000);
             Console.WriteLine("mysqlentity wokeup for 5 sec");
