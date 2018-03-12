@@ -1,0 +1,16 @@
+F:\git\eshopweb\eShopOnWeb\src\Web\bin\Debug\netcoreapp2.0\appsettings.json
+F:\git\eshopweb\eShopOnWeb\src\Web\bin\Debug\netcoreapp2.0\Web.deps.json
+F:\git\eshopweb\eShopOnWeb\src\Web\bin\Debug\netcoreapp2.0\Web.runtimeconfig.json
+F:\git\eshopweb\eShopOnWeb\src\Web\bin\Debug\netcoreapp2.0\Web.runtimeconfig.dev.json
+F:\git\eshopweb\eShopOnWeb\src\Web\bin\Debug\netcoreapp2.0\Web.dll
+F:\git\eshopweb\eShopOnWeb\src\Web\bin\Debug\netcoreapp2.0\Web.pdb
+F:\git\eshopweb\eShopOnWeb\src\Web\bin\Debug\netcoreapp2.0\ApplicationCore.dll
+F:\git\eshopweb\eShopOnWeb\src\Web\bin\Debug\netcoreapp2.0\Infrastructure.dll
+F:\git\eshopweb\eShopOnWeb\src\Web\bin\Debug\netcoreapp2.0\ApplicationCore.pdb
+F:\git\eshopweb\eShopOnWeb\src\Web\bin\Debug\netcoreapp2.0\Infrastructure.pdb
+F:\git\eshopweb\eShopOnWeb\src\Web\obj\Debug\netcoreapp2.0\Web.csprojResolveAssemblyReference.cache
+F:\git\eshopweb\eShopOnWeb\src\Web\obj\Debug\netcoreapp2.0\Web.csproj.CoreCompileInputs.cache
+F:\git\eshopweb\eShopOnWeb\src\Web\obj\Debug\netcoreapp2.0\Web.AssemblyInfoInputs.cache
+F:\git\eshopweb\eShopOnWeb\src\Web\obj\Debug\netcoreapp2.0\Web.AssemblyInfo.cs
+F:\git\eshopweb\eShopOnWeb\src\Web\obj\Debug\netcoreapp2.0\Web.dll
+F:\git\eshopweb\eShopOnWeb\src\Web\obj\Debug\netcoreapp2.0\Web.pdb

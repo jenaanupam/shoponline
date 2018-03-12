@@ -1,0 +1,16 @@
+﻿CREATE TABLE baskets (  Id int(11) NOT NULL AUTO_INCREMENT,  BuyerId text,  PRIMARY KEY (Id)) 
+ 
+CREATE TABLE catalogbrand (  Id int(11) NOT NULL AUTO_INCREMENT,  Brand varchar(100) NOT NULL,  PRIMARY KEY (Id))  
+
+CREATE TABLE catalogtype (  Id int(11) NOT NULL AUTO_INCREMENT,  Type varchar(100) NOT NULL,  PRIMARY KEY (Id)) 
+
+CREATE TABLE orders (  Id int(11) NOT NULL AUTO_INCREMENT,  BuyerId text,  OrderDate timestamp NOT NULL,  ShipToAddress_City text,  ShipToAddress_Country text,  ShipToAddress_State text,  ShipToAddress_Street text,  ShipToAddress_ZipCode text,  PRIMARY KEY (Id)) 
+
+CREATE TABLE basketitem (  Id int(11) NOT NULL AUTO_INCREMENT,  BasketId int(11) DEFAULT NULL,  CatalogItemId int(11) NOT NULL,  Quantity int(11) NOT NULL,  UnitPrice decimal(18,2) NOT NULL,  PRIMARY KEY (Id))  
+
+CREATE TABLE catalogitem (  Id int(11) NOT NULL AUTO_INCREMENT,  CatalogBrandId int(11) NOT NULL,  CatalogTypeId int(11) NOT NULL,  Description text,  Name varchar(50) NOT NULL,  PictureUri text,  Price decimal(18,2) NOT NULL,  PRIMARY KEY (Id))  
+
+CREATE TABLE orderitems (  Id int(11) NOT NULL AUTO_INCREMENT,  OrderId int(11) DEFAULT NULL,  UnitPrice decimal(18,2) NOT NULL,  Units int(11) NOT NULL,  ItemOrdered_CatalogItemId int(11) NOT NULL,  ItemOrdered_PictureUri text,  ItemOrdered_ProductName text,  PRIMARY KEY (Id)) 
+
+
+

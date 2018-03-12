@@ -1,0 +1,16 @@
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\UnitTests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\UnitTests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netstandard15.dll
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\UnitTests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netstandard15.dll
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\UnitTests\bin\Debug\netcoreapp2.0\UnitTests.deps.json
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\UnitTests\bin\Debug\netcoreapp2.0\UnitTests.runtimeconfig.json
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\UnitTests\bin\Debug\netcoreapp2.0\UnitTests.runtimeconfig.dev.json
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\UnitTests\bin\Debug\netcoreapp2.0\UnitTests.dll
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\UnitTests\bin\Debug\netcoreapp2.0\UnitTests.pdb
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\UnitTests\bin\Debug\netcoreapp2.0\ApplicationCore.dll
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\UnitTests\bin\Debug\netcoreapp2.0\ApplicationCore.pdb
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\UnitTests\obj\Debug\netcoreapp2.0\UnitTests.csprojResolveAssemblyReference.cache
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\UnitTests\obj\Debug\netcoreapp2.0\UnitTests.csproj.CoreCompileInputs.cache
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\UnitTests\obj\Debug\netcoreapp2.0\UnitTests.AssemblyInfoInputs.cache
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\UnitTests\obj\Debug\netcoreapp2.0\UnitTests.AssemblyInfo.cs
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\UnitTests\obj\Debug\netcoreapp2.0\UnitTests.dll
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\UnitTests\obj\Debug\netcoreapp2.0\UnitTests.pdb

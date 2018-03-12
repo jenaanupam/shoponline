@@ -1,0 +1,33 @@
+F:\git\eshopweb\eShopOnWeb\src\Infrastructure\bin\Debug\netcoreapp2.0\Infrastructure.deps.json
+F:\git\eshopweb\eShopOnWeb\src\Infrastructure\bin\Debug\netcoreapp2.0\Infrastructure.dll
+F:\git\eshopweb\eShopOnWeb\src\Infrastructure\bin\Debug\netcoreapp2.0\Infrastructure.pdb
+F:\git\eshopweb\eShopOnWeb\src\Infrastructure\bin\Debug\netcoreapp2.0\ApplicationCore.dll
+F:\git\eshopweb\eShopOnWeb\src\Infrastructure\bin\Debug\netcoreapp2.0\ApplicationCore.pdb
+F:\git\eshopweb\eShopOnWeb\src\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.csprojResolveAssemblyReference.cache
+F:\git\eshopweb\eShopOnWeb\src\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.csproj.CoreCompileInputs.cache
+F:\git\eshopweb\eShopOnWeb\src\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.AssemblyInfoInputs.cache
+F:\git\eshopweb\eShopOnWeb\src\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.AssemblyInfo.cs
+F:\git\eshopweb\eShopOnWeb\src\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.dll
+F:\git\eshopweb\eShopOnWeb\src\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.pdb
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\Infrastructure\bin\Debug\netcoreapp2.0\Infrastructure.deps.json
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\Infrastructure\bin\Debug\netcoreapp2.0\Infrastructure.dll
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\Infrastructure\bin\Debug\netcoreapp2.0\Infrastructure.pdb
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\Infrastructure\bin\Debug\netcoreapp2.0\ApplicationCore.dll
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\Infrastructure\bin\Debug\netcoreapp2.0\ApplicationCore.pdb
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.csprojResolveAssemblyReference.cache
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.csproj.CoreCompileInputs.cache
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.AssemblyInfoInputs.cache
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.AssemblyInfo.cs
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.dll
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.pdb
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\Infrastructure\bin\Debug\netcoreapp2.0\Infrastructure.deps.json
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\Infrastructure\bin\Debug\netcoreapp2.0\Infrastructure.dll
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\Infrastructure\bin\Debug\netcoreapp2.0\Infrastructure.pdb
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\Infrastructure\bin\Debug\netcoreapp2.0\ApplicationCore.dll
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\Infrastructure\bin\Debug\netcoreapp2.0\ApplicationCore.pdb
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.csprojResolveAssemblyReference.cache
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.csproj.CoreCompileInputs.cache
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.AssemblyInfoInputs.cache
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.AssemblyInfo.cs
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.dll
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.pdb

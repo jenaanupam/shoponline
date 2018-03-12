@@ -1,0 +1,4 @@
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\FunctionalTests\obj\Debug\netcoreapp2.0\FunctionalTests.csprojResolveAssemblyReference.cache
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\FunctionalTests\obj\Debug\netcoreapp2.0\FunctionalTests.csproj.CoreCompileInputs.cache
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\FunctionalTests\obj\Debug\netcoreapp2.0\FunctionalTests.AssemblyInfoInputs.cache
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\tests\FunctionalTests\obj\Debug\netcoreapp2.0\FunctionalTests.AssemblyInfo.cs

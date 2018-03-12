@@ -1,0 +1,10 @@
+﻿---
+applications:
+- name: demo_dotNetCoreeshopwebmysql
+  memory: 2048M
+  buildpack : dotnet_core_buildpack
+  env:
+    ASPNETCORE_ENVIRONMENT: Development
+  services:
+   - enfmysqlcore
+    

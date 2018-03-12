@@ -1,0 +1,48 @@
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.deps.json
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.runtimeconfig.json
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.runtimeconfig.dev.json
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.dll
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.pdb
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\ApplicationCore.dll
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Infrastructure.dll
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\ApplicationCore.pdb
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Infrastructure.pdb
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\WebRazorPages.csprojResolveAssemblyReference.cache
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\WebRazorPages.csproj.CoreCompileInputs.cache
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\WebRazorPages.AssemblyInfoInputs.cache
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\WebRazorPages.AssemblyInfo.cs
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.dll
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.pdb
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.deps.json
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.runtimeconfig.json
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.runtimeconfig.dev.json
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.dll
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.pdb
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\ApplicationCore.dll
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Infrastructure.dll
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\ApplicationCore.pdb
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Infrastructure.pdb
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\WebRazorPages.csprojResolveAssemblyReference.cache
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\WebRazorPages.csproj.CoreCompileInputs.cache
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\WebRazorPages.AssemblyInfoInputs.cache
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\WebRazorPages.AssemblyInfo.cs
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.dll
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.pdb
+F:\git\.net core\pcf working projects\eshopwebppcf\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\DBSCRIPTS.txt
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\DBSCRIPTS.txt
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.deps.json
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.runtimeconfig.json
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.runtimeconfig.dev.json
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.dll
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.pdb
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\ApplicationCore.dll
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Infrastructure.dll
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\ApplicationCore.pdb
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\Infrastructure.pdb
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\WebRazorPages.csprojResolveAssemblyReference.cache
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\WebRazorPages.csproj.CoreCompileInputs.cache
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\WebRazorPages.AssemblyInfoInputs.cache
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\WebRazorPages.AssemblyInfo.cs
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.dll
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.pdb
+F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\DBSCRIPTS - Copy.txt

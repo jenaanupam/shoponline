@@ -1,0 +1,17 @@
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\ubuntu.14.04-x64\libhostpolicy.so
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\ubuntu.14.04-x64\libhostfxr.so
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.RazorPages
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.deps.json
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.runtimeconfig.json
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.runtimeconfig.dev.json
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.dll
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.pdb
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\ubuntu.14.04-x64\ApplicationCore.dll
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\ubuntu.14.04-x64\Infrastructure.dll
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\ubuntu.14.04-x64\ApplicationCore.pdb
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\ubuntu.14.04-x64\Infrastructure.pdb
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\ubuntu.14.04-x64\WebRazorPages.csproj.CoreCompileInputs.cache
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\ubuntu.14.04-x64\WebRazorPages.AssemblyInfoInputs.cache
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\ubuntu.14.04-x64\WebRazorPages.AssemblyInfo.cs
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.dll
+F:\git\eshopweb\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.pdb

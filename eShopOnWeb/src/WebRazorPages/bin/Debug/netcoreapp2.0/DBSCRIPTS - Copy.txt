@@ -1,0 +1,16 @@
+﻿CREATE TABLE baskets (  Id int(11) NOT NULL AUTO_INCREMENT,  BuyerId text,  PRIMARY KEY (Id)) 
+ 
+CREATE TABLE catalogbrand (  Id int(11) NOT NULL AUTO_INCREMENT,  Brand varchar(100) NOT NULL,  PRIMARY KEY (Id))  
+
+CREATE TABLE catalogtype (  Id int(11) NOT NULL AUTO_INCREMENT,  Type varchar(100) NOT NULL,  PRIMARY KEY (Id)) 
+
+CREATE TABLE orders (  Id int(11) NOT NULL AUTO_INCREMENT,  BuyerId text,  OrderDate timestamp NOT NULL,  ShipToAddress_City text,  ShipToAddress_Country text,  ShipToAddress_State text,  ShipToAddress_Street text,  ShipToAddress_ZipCode text,  PRIMARY KEY (Id)) 
+
+CREATE TABLE basketitem (  Id int(11) NOT NULL AUTO_INCREMENT,  BasketId int(11) DEFAULT NULL,  CatalogItemId int(11) NOT NULL,  Quantity int(11) NOT NULL,  UnitPrice decimal(18,2) NOT NULL,  PRIMARY KEY (Id),  KEY IX_BasketItem_BasketId (BasketId),  CONSTRAINT FK_BasketItem_Baskets_BasketId FOREIGN KEY (BasketId) REFERENCES baskets (id))  
+
+CREATE TABLE catalog (  Id int(11) NOT NULL AUTO_INCREMENT,  CatalogBrandId int(11) NOT NULL,  CatalogTypeId int(11) NOT NULL,  Description text,  Name varchar(50) NOT NULL,  PictureUri text,  Price decimal(18,2) NOT NULL,  PRIMARY KEY (Id),  KEY IX_Catalog_CatalogBrandId (CatalogBrandId),  KEY IX_Catalog_CatalogTypeId (CatalogTypeId),  CONSTRAINT FK_Catalog_CatalogBrand_CatalogBrandId FOREIGN KEY (CatalogBrandId) REFERENCES catalogbrand (id) ON DELETE CASCADE,  CONSTRAINT FK_Catalog_CatalogType_CatalogTypeId FOREIGN KEY (CatalogTypeId) REFERENCES catalogtype (id) ON DELETE CASCADE)  
+
+CREATE TABLE orderitems (  Id int(11) NOT NULL AUTO_INCREMENT,  OrderId int(11) DEFAULT NULL,  UnitPrice decimal(18,2) NOT NULL,  Units int(11) NOT NULL,  ItemOrdered_CatalogItemId int(11) NOT NULL,  ItemOrdered_PictureUri text,  ItemOrdered_ProductName text,  PRIMARY KEY (Id),  KEY IX_OrderItems_OrderId (OrderId),  CONSTRAINT FK_OrderItems_Orders_OrderId FOREIGN KEY (OrderId) REFERENCES orders (id)) 
+
+
+
