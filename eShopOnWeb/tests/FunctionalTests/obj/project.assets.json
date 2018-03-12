@@ -7260,11 +7260,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "F:\\git\\.net core\\entityframework\\eshopweb\\eShopOnWeb\\tests\\FunctionalTests\\FunctionalTests.csproj",
+      "projectUniqueName": "F:\\git\\.net core\\shoponline\\shoponline\\eShopOnWeb\\tests\\FunctionalTests\\FunctionalTests.csproj",
       "projectName": "FunctionalTests",
-      "projectPath": "F:\\git\\.net core\\entityframework\\eshopweb\\eShopOnWeb\\tests\\FunctionalTests\\FunctionalTests.csproj",
+      "projectPath": "F:\\git\\.net core\\shoponline\\shoponline\\eShopOnWeb\\tests\\FunctionalTests\\FunctionalTests.csproj",
       "packagesPath": "C:\\Users\\Anupa\\.nuget\\packages\\",
-      "outputPath": "F:\\git\\.net core\\entityframework\\eshopweb\\eShopOnWeb\\tests\\FunctionalTests\\obj\\",
+      "outputPath": "F:\\git\\.net core\\shoponline\\shoponline\\eShopOnWeb\\tests\\FunctionalTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7283,8 +7283,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "F:\\git\\.net core\\entityframework\\eshopweb\\eShopOnWeb\\src\\ApplicationCore\\ApplicationCore.csproj": {
-              "projectPath": "F:\\git\\.net core\\entityframework\\eshopweb\\eShopOnWeb\\src\\ApplicationCore\\ApplicationCore.csproj"
+            "F:\\git\\.net core\\shoponline\\shoponline\\eShopOnWeb\\src\\ApplicationCore\\ApplicationCore.csproj": {
+              "projectPath": "F:\\git\\.net core\\shoponline\\shoponline\\eShopOnWeb\\src\\ApplicationCore\\ApplicationCore.csproj"
             }
           }
         }

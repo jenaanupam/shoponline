@@ -5,10 +5,14 @@
     ViewData["Title"] = "My Basket";
 }
 
-<a class="esh-basketstatus "
-   asp-page="/Basket/Index">
+<style>
+    .floatright{
+        float:right;
+    }
+</style>
+<a class="esh-basketstatus floatright"   asp-page="/Basket/Index">
         <div class="esh-basketstatus-image">
-            <img src="~/images/cart.png" />
+            <img src="~/images/cartinverted.png" />
         </div>
         <div class="esh-basketstatus-badge">
             @Model.ItemsCount

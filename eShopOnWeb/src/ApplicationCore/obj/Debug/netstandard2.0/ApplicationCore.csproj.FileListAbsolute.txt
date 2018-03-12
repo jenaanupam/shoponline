@@ -24,3 +24,12 @@ F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\ApplicationCore\obj\Deb
 F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\ApplicationCore\obj\Debug\netstandard2.0\ApplicationCore.AssemblyInfo.cs
 F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\ApplicationCore\obj\Debug\netstandard2.0\ApplicationCore.dll
 F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\ApplicationCore\obj\Debug\netstandard2.0\ApplicationCore.pdb
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\ApplicationCore\bin\Debug\netstandard2.0\ApplicationCore.deps.json
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\ApplicationCore\bin\Debug\netstandard2.0\ApplicationCore.dll
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\ApplicationCore\bin\Debug\netstandard2.0\ApplicationCore.pdb
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\ApplicationCore\obj\Debug\netstandard2.0\ApplicationCore.csprojResolveAssemblyReference.cache
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\ApplicationCore\obj\Debug\netstandard2.0\ApplicationCore.csproj.CoreCompileInputs.cache
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\ApplicationCore\obj\Debug\netstandard2.0\ApplicationCore.AssemblyInfoInputs.cache
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\ApplicationCore\obj\Debug\netstandard2.0\ApplicationCore.AssemblyInfo.cs
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\ApplicationCore\obj\Debug\netstandard2.0\ApplicationCore.dll
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\ApplicationCore\obj\Debug\netstandard2.0\ApplicationCore.pdb
