@@ -8,5 +8,6 @@ namespace ApplicationCore.Interfaces
     {
         Order GetByIdWithItems(int id);
         Task<Order> GetByIdWithItemsAsync(int id);
+        Task<Order> GetByIdWithItemsAsyncnewfix(int orderId);
     }
 }

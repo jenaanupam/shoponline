@@ -13,5 +13,10 @@ namespace WebRazorPages.Controllers
         {
             return View("~/Pages/contactus/Index.cshtml");
         }
+
+        public IActionResult locator()
+        {
+            return View("~/Pages/contactus/locator.cshtml");
+        }
     }
 }

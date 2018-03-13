@@ -27,5 +27,13 @@ namespace Infrastructure.Data
                 .Include("OrderItems.ItemOrdered")
                 .FirstOrDefaultAsync();
         }
+
+        public Task<Order> GetByIdWithItemsAsyncnewfix(int id)
+        {
+            return _dbContext.Orders
+                .Include(o => o.OrderItems)
+                .Include("OrderItems.ItemOrdered")
+                .FirstOrDefaultAsync(x=>x.Id==id);
+        }
     }
 }

@@ -1,0 +1,27 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Microsoft.eShopWeb.ApplicationCore.Entities
+@{
+    ViewData["Title"] = "Contact Us";
+    Layout = "~/Pages/_Layout.cshtml";
+
+}
+
+<div style="margin:0 auto;">
+    <div id="map" style="width:100%;height:500px"></div>
+
+    <script>
+        function myMap() {
+            var myCenter = new google.maps.LatLng(42.537076, -83.110000);
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = { center: myCenter, zoom: 5 };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({ position: myCenter });
+            marker.setMap(map);
+        }
+    </script>
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDi5CcgsnbumMwuIjLP_fGrkHAwoyt391Q&callback=myMap"></script>
+    @*https://www.w3schools.com/graphics/tryit.asp?filename=trymap_types_45*@
+</div>

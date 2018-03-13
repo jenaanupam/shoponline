@@ -59,7 +59,7 @@ namespace WebRazorPages.Controllers
         private void inserttodb(CatalogItem cti)
         {
             string connstr = "server=10.0.0.77;port=3306;database=cf_d66b9f8e_07fa_45bc_9eac_dc6f4124756c;user=BojS2T10mqqXrQIg;password=hIxKCVhllAHjaf3z;";
-           // connstr = "server=localhost;port=3306;database=testcaseissue;user=root;password=anupam;";
+            //connstr = "server=localhost;port=3306;database=testcaseissue;user=root;password=anupam;";
             string command = "SELECT max(Id) as maxid FROM catalogitem;";
             int maxid = 0;
             using (MySqlConnection conn = new MySqlConnection(connstr))

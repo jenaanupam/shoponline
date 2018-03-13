@@ -11,10 +11,11 @@ namespace Microsoft.eShopWeb.RazorPages.Pages.Order
     public class DetailModel : PageModel
     {
         private readonly IOrderRepository _orderRepository;
-
-        public DetailModel(IOrderRepository orderRepository)
+        private readonly IUriComposer _uriComposer;
+        public DetailModel(IOrderRepository orderRepository, IUriComposer uriComposer)
         {
             _orderRepository = orderRepository;
+            _uriComposer = uriComposer;
         }
 
         public OrderViewModel OrderDetails { get; set; } = new OrderViewModel();
@@ -43,14 +44,14 @@ namespace Microsoft.eShopWeb.RazorPages.Pages.Order
 
         public async Task OnGet(int orderId)
         {
-            var order = await _orderRepository.GetByIdWithItemsAsync(orderId);
+            var order = await _orderRepository.GetByIdWithItemsAsyncnewfix(orderId);
             OrderDetails = new OrderViewModel()
             {
                 OrderDate = order.OrderDate,
                 OrderItems = order.OrderItems.Select(oi => new OrderItemViewModel()
                 {
                     Discount = 0,
-                    PictureUrl = oi.ItemOrdered.PictureUri,
+                    PictureUrl = _uriComposer.ComposePicUri(oi.ItemOrdered.PictureUri),
                     ProductId = oi.ItemOrdered.CatalogItemId,
                     ProductName = oi.ItemOrdered.ProductName,
                     UnitPrice = oi.UnitPrice,

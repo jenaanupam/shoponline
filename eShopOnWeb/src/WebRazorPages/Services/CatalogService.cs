@@ -58,7 +58,9 @@ namespace Microsoft.eShopWeb.RazorPages.Services
             {
                 x.PictureUri = _uriComposer.ComposePicUri(x.PictureUri);
             });
+            //remove if image not exists
 
+            //remove if image not exists
             var vm = new CatalogIndexViewModel()
             {
                 CatalogItems = itemsOnPage.Select(i => new CatalogItemViewModel()

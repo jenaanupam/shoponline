@@ -68,3 +68,22 @@ F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\obj\relea
 F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\obj\release\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.dll
 F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\obj\release\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.pdb
 F:\git\.net core\entityframework\eshopweb\eShopOnWeb\src\WebRazorPages\bin\release\netcoreapp2.0\ubuntu.14.04-x64\DBSCRIPTS - Copy.txt
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\bin\release\netcoreapp2.0\ubuntu.14.04-x64\libhostpolicy.so
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\bin\release\netcoreapp2.0\ubuntu.14.04-x64\libhostfxr.so
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\bin\release\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.RazorPages
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\bin\release\netcoreapp2.0\ubuntu.14.04-x64\DBSCRIPTS - Copy.txt
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\bin\release\netcoreapp2.0\ubuntu.14.04-x64\DBSCRIPTS.txt
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\bin\release\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.deps.json
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\bin\release\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.runtimeconfig.json
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\bin\release\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.runtimeconfig.dev.json
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\bin\release\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.dll
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\bin\release\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.pdb
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\bin\release\netcoreapp2.0\ubuntu.14.04-x64\ApplicationCore.dll
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\bin\release\netcoreapp2.0\ubuntu.14.04-x64\Infrastructure.dll
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\bin\release\netcoreapp2.0\ubuntu.14.04-x64\ApplicationCore.pdb
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\bin\release\netcoreapp2.0\ubuntu.14.04-x64\Infrastructure.pdb
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\obj\release\netcoreapp2.0\ubuntu.14.04-x64\WebRazorPages.csproj.CoreCompileInputs.cache
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\obj\release\netcoreapp2.0\ubuntu.14.04-x64\WebRazorPages.AssemblyInfoInputs.cache
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\obj\release\netcoreapp2.0\ubuntu.14.04-x64\WebRazorPages.AssemblyInfo.cs
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\obj\release\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.dll
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\obj\release\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.pdb

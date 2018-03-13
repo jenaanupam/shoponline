@@ -1,0 +1,199 @@
+﻿@page "{pageId?}"
+@{
+    ViewData["Title"] = "Catalog";
+    @model IndexModel
+}
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    .mySlides {
+        display: none
+    }
+
+    .w3-left, .w3-right, .w3-badge {
+        cursor: pointer
+    }
+
+    .w3-badge {
+        height: 13px;
+        width: 13px;
+        padding: 0
+    }
+</style>
+ 
+
+ 
+<div id="divSlider1">
+
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center">The clock is ticking , Grab the Deals</h3>
+        <p class="w3-center">
+            <canvas id="canvas" width="215" height="161" class="w3-hover-opacity" alt="" style="background-color:white"></canvas>
+        </p><br>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img src="~/images/HeadNavigation/addtocart.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="T&C applies for above deals">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="~/images/HeadNavigation/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Who will not like these Coffee beans. Imported beans at 60% discount. Search our stores before offer expires!!">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="~/images/HeadNavigation/alldaysavings.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="We offer you huge discounts (upto 90% at out verified merchants. Use Refer code GETMEALL90)">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="~/images/HeadNavigation/autoparts.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Get your car to our verified Repairers, we fix it 20% lower than market rates. Deal">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+                <img src="~/images/HeadNavigation/discountsss.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Hurry up!!!">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="~/images/HeadNavigation/holidaysale.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Celebrate with something new. Check out our stores.">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="~/images/HeadNavigation/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Paranormal Photography ! Something new in our store.">
+                @*<canvas id="canvas" width="215" height="161" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train"
+                    style="background-color:#333"></canvas>*@
+            </div>
+
+            <div class="w3-col m3">
+                <img src="~/images/HeadNavigation/furniture.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Free Home Delivery">
+            </div>
+            @*<button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>*@
+        </div>
+    </div>
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+</div>
+ 
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        if (showsliders() == false ) {           
+
+            $("#divSlider1").hide();
+
+            $("#divsearchresults").show();
+        }
+        else {
+            $("#divsearchresults").hide();
+
+            $("#divSlider1").show();
+
+        }
+    });
+
+    function showsliders() {
+
+     
+            return true;
+       
+
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+    //analogue clock
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    var radius = canvas.height / 2;
+    ctx.translate(radius, radius);
+    radius = radius * 0.90
+    setInterval(drawClock, 1000);
+
+    function drawClock() {
+        drawFace(ctx, radius);
+        drawNumbers(ctx, radius);
+        drawTime(ctx, radius);
+    }
+
+    function drawFace(ctx, radius) {
+        var grad;
+        ctx.beginPath();
+        ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        grad = ctx.createRadialGradient(0, 0, radius * 0.95, 0, 0, radius * 1.05);
+        grad.addColorStop(0, '#333');
+        grad.addColorStop(0.5, 'white');
+        grad.addColorStop(1, '#333');
+        ctx.strokeStyle = grad;
+        ctx.lineWidth = radius * 0.1;
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(0, 0, radius * 0.1, 0, 2 * Math.PI);
+        ctx.fillStyle = '#333';
+        ctx.fill();
+    }
+
+    function drawNumbers(ctx, radius) {
+        var ang;
+        var num;
+        ctx.font = radius * 0.15 + "px arial";
+        ctx.textBaseline = "middle";
+        ctx.textAlign = "center";
+        for (num = 1; num < 13; num++) {
+            ang = num * Math.PI / 6;
+            ctx.rotate(ang);
+            ctx.translate(0, -radius * 0.85);
+            ctx.rotate(-ang);
+            ctx.fillText(num.toString(), 0, 0);
+            ctx.rotate(ang);
+            ctx.translate(0, radius * 0.85);
+            ctx.rotate(-ang);
+        }
+    }
+
+    function drawTime(ctx, radius) {
+        var now = new Date();
+        var hour = now.getHours();
+        var minute = now.getMinutes();
+        var second = now.getSeconds();
+        //hour
+        hour = hour % 12;
+        hour = (hour * Math.PI / 6) +
+            (minute * Math.PI / (6 * 60)) +
+            (second * Math.PI / (360 * 60));
+        drawHand(ctx, hour, radius * 0.5, radius * 0.07);
+        //minute
+        minute = (minute * Math.PI / 30) + (second * Math.PI / (30 * 60));
+        drawHand(ctx, minute, radius * 0.8, radius * 0.07);
+        // second
+        second = (second * Math.PI / 30);
+        drawHand(ctx, second, radius * 0.9, radius * 0.02);
+    }
+
+    function drawHand(ctx, pos, length, width) {
+        ctx.beginPath();
+        ctx.lineWidth = width;
+        ctx.lineCap = "round";
+        ctx.moveTo(0, 0);
+        ctx.rotate(pos);
+        ctx.lineTo(0, -length);
+        ctx.stroke();
+        ctx.rotate(-pos);
+    }
+    //clock end
+</script>

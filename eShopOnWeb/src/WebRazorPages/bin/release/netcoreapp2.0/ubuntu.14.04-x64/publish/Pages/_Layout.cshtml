@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+<!DOCTYPE html>
 <html>
 <head>
     <script src="~/js/jquery-3.3.1.min.js" type="text/javascript"></script>
@@ -24,37 +25,161 @@
     <link rel="stylesheet" href="~/css/orders/orders.component.css" />
     <style>
         .backgroundappcolor {
-            background-color: #2874f0;
+            background-color: #0641A1;
         }
+
         .logofloat {
-           float:left;
+            float: left;
         }
+
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #0641A1;
+            height: 30px;
+        }
+
+            /* Style the topnav links */
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 3px 5px;
+                text-decoration: none;
+                font-weight: 500;
+                font-family: "Times New Roman", Times, serif;
+                font-size: 13px;
+                line-height: 1.5;
+            }
+
+                /* Change color on hover */
+                .topnav a:hover {
+                    text-decoration: underline;
+                }
+
+
+        /* Style the top navigation bar */
+        .topnav2 {
+            overflow: hidden;
+            background-color: #0641A1;
+            height:60px;
+        }
+
+            /* Style the topnav links */
+            .topnav2 a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 3px 5px;
+                text-decoration: none;
+                font-weight: 500;
+                font-family: "Times New Roman", Times, serif;
+                font-size: 13px;
+                line-height: 1.5;
+            }
+
+                /* Change color on hover */
+                .topnav2 a:hover {
+                    text-decoration: underline;
+                }
+         
     </style>
 </head>
 <body>
     <header class="navbar navbar-light navbar-static-top backgroundappcolor">
-        <div class="container">
-            @*<article class="row">*@
 
-            @*<section class="col-lg-7 col-md-6 col-xs-12">*@
-            <a asp-page="/Index" class="navbar-left">
+
+
+        <div class="topnav">
+           
+            <form>
+                <a href="/contactus/index" style="float:right;margin-right:10px;">Need Help?</a>
+                <a href="#" style="float:right;margin-right:10px;">Locator</a>
+                <a href="/weeklydeal/index" style="float:right;margin-right:10px;">Weekly Deal</a>
+            </form>
+        </div>
+        @*<div class="topnav2">
+            <a asp-page="/Index">
                 <img src="../images/brand.png" alt="eShop On Web" />
             </a>
+            <form>
+                <a href="#" style="float:right">Cart Img</a>
+                <a href="#" style="float:right">Log Out</a>
+                <a href="#" style="float:right">Log In</a>
+                <a href="#" style="float:right">Account</a>
+                <a href="#" style="float:right">Admin</a>
+                <a href="#" style="float:right">My Orders</a>
 
-            @{
-                if (string.IsNullOrEmpty(ViewBag.LoginPartialPath))
-                {
-                    @await Html.PartialAsync("_LoginPartial")
-                }
-                else
-                {
-                    string k = ViewBag.LoginPartialPath;
-                    @await Html.PartialAsync(k + "_LoginPartial.cshtml");
-                }
-            }
-            @*</section>*@
 
-            @*</article>*@
+
+            </form>
+        </div>*@
+
+
+
+
+
+        <div class="topnav2">
+            <a asp-page="/Index">
+                <img src="~/images/syntel.png" alt="Sop Online" style="height:97%;width:130px;" />
+            </a> 
+
+            @if (Context.User.Identity.IsAuthenticated)
+            {
+
+            <form asp-controller="Account" asp-action="Logout" method="post" id="logoutForm">
+                <div style="float:right;margin-right:10px;">
+                    @{
+            if (string.IsNullOrEmpty(ViewBag.LoginPartialPath))
+            {
+                @await Component.InvokeAsync("Basket")
+}
+else
+{
+    string k = ViewBag.LoginPartialPath;
+            @await Component.InvokeAsync("Basket");
+}
+                    }
+                </div>
+                <a href="javascript:document.getElementById('logoutForm').submit()" style="float:right;margin-right:10px;">Log Out</a>
+                <a asp-page="/Account/Manage/Index" style="float:right;margin-right:10px;">Account</a>
+                <a asp-page="/Order/Index" style="float:right;margin-right:10px;">Shopping History</a>
+                <a href="/admin/index?fileupload=false" style="float:right;margin-right:10px;">Admin</a>
+
+                <p style="float:right;font-weight: 600;color: #f2f2f2;padding: 3px 5px;font-family:Times New Roman, Times, serif;font-size: 13px;float:right;">@Context.User.Identity.Name</p>
+                 
+</form>
+                        }
+                        else
+                        {
+            <form asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
+                <div style="float:right;margin-right:10px;">
+                    @{
+            if (string.IsNullOrEmpty(ViewBag.LoginPartialPath))
+            {
+                @await Component.InvokeAsync("Basket")
+}
+else
+{
+    string k = ViewBag.LoginPartialPath;
+            @await Component.InvokeAsync("Basket");
+}
+                    }
+                </div>
+                <a asp-page="/Account/Signin" style="float:right;margin-right:10px;">
+                    Login
+                </a>
+                <p style="float:left;font-weight: 600;color: #f2f2f2;padding: 3px 5px;font-family:Times New Roman, Times, serif;font-size: 13px;float:right;">Guest!</p>
+                 
+
+
+
+            </form>
+}
+
         </div>
     </header>
 
@@ -65,7 +190,7 @@
         <div class="">
             <article class="">
 
-              
+
 
                 <section class="">
                     <div class="esh-app-footer-text hidden-xs"> All rights reserved 2018</div>
@@ -82,9 +207,9 @@
     </environment>
     <environment names="Staging,Production">
         @*<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery">
-        </script>*@
+                    asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                    asp-fallback-test="window.jQuery">
+            </script>*@
         <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
                 asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
                 asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
