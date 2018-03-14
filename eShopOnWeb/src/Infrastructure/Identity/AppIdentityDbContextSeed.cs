@@ -7,7 +7,7 @@ namespace Infrastructure.Identity
     {
         public static async Task SeedAsync(UserManager<ApplicationUser> userManager)
         {
-            var defaultUser = new ApplicationUser { UserName = "demouser@microsoft.com", Email = "demouser@microsoft.com" };
+            var defaultUser = new ApplicationUser { UserName = "admin@synt.com", Email = "admin@synt.com" };
             await userManager.CreateAsync(defaultUser, "Pass@word1");
         }
     }

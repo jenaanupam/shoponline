@@ -87,3 +87,4 @@ F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\obj\release\
 F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\obj\release\netcoreapp2.0\ubuntu.14.04-x64\WebRazorPages.AssemblyInfo.cs
 F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\obj\release\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.dll
 F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\obj\release\netcoreapp2.0\ubuntu.14.04-x64\Microsoft.eShopWeb.RazorPages.pdb
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\bin\release\netcoreapp2.0\ubuntu.14.04-x64\connstr.txt

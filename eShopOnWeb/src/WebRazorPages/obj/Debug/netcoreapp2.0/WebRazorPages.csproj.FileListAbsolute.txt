@@ -63,3 +63,4 @@ F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\obj\Debug\ne
 F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\WebRazorPages.AssemblyInfo.cs
 F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.dll
 F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\obj\Debug\netcoreapp2.0\Microsoft.eShopWeb.RazorPages.pdb
+F:\git\.net core\shoponline\shoponline\eShopOnWeb\src\WebRazorPages\bin\Debug\netcoreapp2.0\connstr.txt

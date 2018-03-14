@@ -182,11 +182,16 @@ string k = ViewBag.LoginPartialPath;
                     <a asp-page="/Account/Manage/Index" style="float:right;margin-right:10px;">Account</a>
                     <a asp-page="/Order/Index" style="float:right;margin-right:10px;">Shopping History</a>
                     <a href="/admin/index?fileupload=false" style="float:right;margin-right:10px;">
-                        Admin
+                        Product register
                     </a>
-                    
-                    <a href="/" style="float:right;margin-right:10px;"><i class="fa fa-home w3-large" ></i></a>
-                    
+                    <a href="/admin/index?fileupload=monitor" style="float:right;margin-right:10px;">
+                        Monitor
+                    </a>
+                    <a href="/admin/index?fileupload=true" style="float:right;margin-right:10px;">
+                        File Manager
+                    </a>
+                    <a href="/" style="float:right;margin-right:10px;"><i class="fa fa-home w3-large"></i></a>
+
                 </form>
 }
 else

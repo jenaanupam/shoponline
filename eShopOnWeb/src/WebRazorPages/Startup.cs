@@ -1,5 +1,8 @@
 using ApplicationCore.Interfaces;
 using ApplicationCore.Services;
+using Hangfire;
+using Hangfire.Dashboard;
+using Hangfire.MemoryStorage;
 using Infrastructure.Data;
 using Infrastructure.Identity;
 using Infrastructure.Logging;
@@ -14,6 +17,7 @@ using Microsoft.eShopWeb.RazorPages.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using System.IO;
 using System.Text;
  
  
@@ -61,17 +65,15 @@ namespace Microsoft.eShopWeb.RazorPages
             services.AddDbContext<CatalogContext>(c =>
             {
                 try
-                {                   
-                    //c.UseSqlServer(Configuration.GetConnectionString("CatalogConnection"));
-                    c.UseMySQL("server=10.0.0.77;port=3306;database=cf_d66b9f8e_07fa_45bc_9eac_dc6f4124756c;user=BojS2T10mqqXrQIg;password=hIxKCVhllAHjaf3z;");
-                 //   c.UseMySQL("server =localhost;port=3306;database=testcaseissue;user=root;password=anupam;");
+                {    
+                    c.UseMySQL(getconn());
                 }
                 catch (System.Exception ex)
                 {
                     var message = ex.Message;
                 }
             });
-
+            services.AddHangfire(c => c.UseMemoryStorage());
             // Add Identity DbContext
             //services.AddDbContext<AppIdentityDbContext>(c =>
             //     c.UseMySQL("server=localhost;port=3306;database=testentityfw;user=root;password=anupam;"));
@@ -127,7 +129,13 @@ namespace Microsoft.eShopWeb.RazorPages
         public void Configure(IApplicationBuilder app,
             IHostingEnvironment env)
         {
-             
+            app.UseHangfireServer();
+
+            app.UseHangfireDashboard("/batchmonitor", new DashboardOptions
+            {
+                Authorization = new[] { new MyAuthorizationFilter() }
+            });
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -166,6 +174,31 @@ namespace Microsoft.eShopWeb.RazorPages
                 sb.Append("</tbody></table>");
                 await context.Response.WriteAsync(sb.ToString());
             }));
+        }
+
+        public class MyAuthorizationFilter : IDashboardAuthorizationFilter
+        {
+            public bool Authorize(DashboardContext context)
+            {
+                return true;
+            }
+        }
+
+        public static string getconn()
+        {
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "connstr.txt");
+            string[] list = System.IO.File.ReadAllLines(path);
+            string connstr = "";
+
+            foreach (string c in list)
+            {
+                if (!c.StartsWith("//"))
+                {
+                    connstr = c;
+                }
+            }
+
+            return connstr;
         }
     }
 }

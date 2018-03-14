@@ -1,0 +1,2 @@
+server=10.0.0.77;port=3306;database=cf_d66b9f8e_07fa_45bc_9eac_dc6f4124756c;user=BojS2T10mqqXrQIg;password=hIxKCVhllAHjaf3z;
+//server=localhost;port=3306;database=testcaseissue;user=root;password=anupam;

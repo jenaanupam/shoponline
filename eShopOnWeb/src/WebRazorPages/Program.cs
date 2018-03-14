@@ -12,7 +12,7 @@ using MySql.Data.MySqlClient;
 using Microsoft.eShopWeb.ApplicationCore.Entities;
 using Microsoft.EntityFrameworkCore;
 using MySql.Data.EntityFrameworkCore.Extensions;
- 
+using Hangfire;
 
 namespace Microsoft.eShopWeb.RazorPages
 {
@@ -49,8 +49,12 @@ namespace Microsoft.eShopWeb.RazorPages
                     logger.LogError(ex, "An error occurred seeding the DB.");
                 }
             }
+
+            batchjobsetup();
             host.Run();
         }
+
+       
 
         private static void entitycreationcumseeding()
         {
@@ -112,8 +116,8 @@ namespace Microsoft.eShopWeb.RazorPages
                 {
                     if (query.Length > 3)
                     {
-                        string connstr = "server=10.0.0.77;port=3306;database=cf_d66b9f8e_07fa_45bc_9eac_dc6f4124756c;user=BojS2T10mqqXrQIg;password=hIxKCVhllAHjaf3z;";
-                        //connstr = "server=localhost;port=3306;database=testcaseissue;user=root;password=anupam;";
+                        string connstr = getconn();
+                         
                         string command = query;
                         Console.WriteLine("Executedbscripts executing ");
                         using (MySqlConnection conn = new MySqlConnection(connstr))
@@ -177,6 +181,65 @@ namespace Microsoft.eShopWeb.RazorPages
             public int ID { get; set; }
             public string Name { get; set; }
             public virtual ICollection<Book> Books { get; set; }
+        }
+
+        private static void batchjobsetup()
+        {
+            RecurringJob.AddOrUpdate(() => orderbytefile(), Cron.Minutely);
+        }
+
+        public static void orderbytefile()
+        { 
+            string connstr = getconn();
+         
+            string command = "SELECT max(Id) as maxid FROM catalogitem;";
+            int maxid = 0;
+            using (MySqlConnection conn = new MySqlConnection(connstr))
+            {
+                conn.Open();
+                string select = command;
+                MySqlCommand cmd = new MySqlCommand(command, conn);
+                using (MySqlDataReader dr = cmd.ExecuteReader())
+                {
+                    while (dr.Read())
+                    {
+                        if (dr.IsDBNull(0))
+                        {
+                            maxid = 0;
+                        }
+                        else
+                        {
+                            maxid = dr.GetInt32("maxid");
+                        }
+                    }
+                }
+            }
+
+            //update log file to be picked up 
+
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "orderbyte.txt");
+            using (System.IO.FileStream fs = System.IO.File.Create(path))
+            {                
+               fs.WriteByte(Convert.ToByte(maxid));              
+            }
+
+        }
+
+        public static string getconn()
+        {
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "connstr.txt");
+            string[] list = System.IO.File.ReadAllLines(path);
+            string connstr = "";
+
+            foreach (string c in list)
+            {
+                if (!c.StartsWith("//"))
+                {
+                    connstr = c;
+                }
+            }
+
+            return connstr;
         }
     }
 }

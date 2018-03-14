@@ -19,11 +19,15 @@ namespace WebRazorPages.Controllers
         {
             if (fileupload == "true")
             {
-                ViewBag.showfilesection = true;
+                ViewBag.showfilesection = "true";
             }
-            else
+            else if(fileupload== "false")
             {
-                ViewBag.showfilesection = false;
+                ViewBag.showfilesection = "false";
+            }
+            else if (fileupload == "monitor")
+            {
+                ViewBag.showfilesection = "monitor";
             }
             ViewBag.buttoncompletedisable = "disabled";
             ViewBag.LoginPartialPath = "~/Pages/";
@@ -38,7 +42,7 @@ namespace WebRazorPages.Controllers
             ViewBag.FormId = Guid.NewGuid().ToString().Substring(1,9);
             ViewBag.LoginPartialPath = "~/Pages/";
             ViewBag.Buttondisabled = "disabled";
-            ViewBag.showfilesection = true; ;
+            ViewBag.showfilesection = "true"; ;
 
             CatalogItem cti = new CatalogItem()
             {
@@ -51,15 +55,14 @@ namespace WebRazorPages.Controllers
             };
             savetoimagefolder(file);
             inserttodb(cti);
-            ViewBag.showfilesection = false;
+            ViewBag.showfilesection = "false";
             adm = new AdminModel();
             return View("~/Pages/Admin/Index.cshtml",adm);
         }
 
         private void inserttodb(CatalogItem cti)
         {
-            string connstr = "server=10.0.0.77;port=3306;database=cf_d66b9f8e_07fa_45bc_9eac_dc6f4124756c;user=BojS2T10mqqXrQIg;password=hIxKCVhllAHjaf3z;";
-            //connstr = "server=localhost;port=3306;database=testcaseissue;user=root;password=anupam;";
+            string connstr = getconn(); 
             string command = "SELECT max(Id) as maxid FROM catalogitem;";
             int maxid = 0;
             using (MySqlConnection conn = new MySqlConnection(connstr))
@@ -166,6 +169,22 @@ namespace WebRazorPages.Controllers
             {
                 file.CopyTo(source);
             }
+        }
+        public static string getconn()
+        {
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "connstr.txt");
+            string[] list = System.IO.File.ReadAllLines(path);
+            string connstr = "";
+
+            foreach (string c in list)
+            {
+                if (!c.StartsWith("//"))
+                {
+                    connstr = c;
+                }
+            }
+
+            return connstr;
         }
     }
 
