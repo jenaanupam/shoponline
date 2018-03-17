@@ -10,7 +10,7 @@ namespace Infrastructure.Data
 {
     public class CatalogContextSeed
     {
-        public static async Task SeedAsync(CatalogContextInitialSetup catalogContext,
+        public static async Task SeedAsync(CatalogContext catalogContext,
             int? retry = 0)
         {
             Console.WriteLine("CatalogContextSeed SeedAsync start");

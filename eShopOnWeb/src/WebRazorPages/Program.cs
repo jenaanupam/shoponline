@@ -37,9 +37,9 @@ namespace Microsoft.eShopWeb.RazorPages
                 try
                 {
 
-                    //        var catalogContext = services.GetRequiredService<CatalogContext>();
-                    //        CatalogContextSeed.SeedAsync(catalogContext, loggerFactory)
-                    //.Wait();
+                    var catalogContext = services.GetRequiredService<CatalogContext>();
+                    CatalogContextSeed.SeedAsync(catalogContext)
+            .Wait();
 
                     var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
                     AppIdentityDbContextSeed.SeedAsync(userManager).Wait();
@@ -57,29 +57,29 @@ namespace Microsoft.eShopWeb.RazorPages
 
        
 
-        private static void entitycreationcumseeding()
-        {
-            Console.WriteLine("mysqlentity started");
-            using (var context = new CatalogContextInitialSetup())
-            {
-                try
-                { 
-                 bool iscreated =  context.Database.EnsureCreated();
-                    Console.WriteLine("mysqlentity database created"+iscreated.ToString());
-                    CatalogContextSeed.SeedAsync(context).GetAwaiter();
-                Console.WriteLine("mysqlentity seeded");
-                // Saves changes
-                context.SaveChanges();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("mysqlentity error "+ex.InnerException);
-                }
-            }
+        //private static void entitycreationcumseeding()
+        //{
+        //    Console.WriteLine("mysqlentity started");
+        //    using (var context = new CatalogContextInitialSetup())
+        //    {
+        //        try
+        //        { 
+        //         bool iscreated =  context.Database.EnsureCreated();
+        //            Console.WriteLine("mysqlentity database created"+iscreated.ToString());
+        //            CatalogContextSeed.SeedAsync(context).GetAwaiter();
+        //        Console.WriteLine("mysqlentity seeded");
+        //        // Saves changes
+        //        context.SaveChanges();
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            Console.WriteLine("mysqlentity error "+ex.InnerException);
+        //        }
+        //    }
 
-            Console.WriteLine("mysqlentity ended");
+        //    Console.WriteLine("mysqlentity ended");
 
-        }
+        //}
 
       
 

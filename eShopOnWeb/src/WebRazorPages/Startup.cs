@@ -38,10 +38,10 @@ namespace Microsoft.eShopWeb.RazorPages
         public void ConfigureDevelopmentServices(IServiceCollection services)
         {
             // use in-memory database
-           // ConfigureTestingServices(services);
+            ConfigureTestingServices(services);
 
             // use real database
-             ConfigureProductionServices(services);
+           //  ConfigureProductionServices(services);
 
 
         }
