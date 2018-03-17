@@ -1,8 +1,8 @@
 using ApplicationCore.Interfaces;
 using ApplicationCore.Services;
-using Hangfire;
-using Hangfire.Dashboard;
-using Hangfire.MemoryStorage;
+//using Hangfire;
+//using Hangfire.Dashboard;
+//using Hangfire.MemoryStorage;
 using Infrastructure.Data;
 using Infrastructure.Identity;
 using Infrastructure.Logging;
@@ -73,7 +73,7 @@ namespace Microsoft.eShopWeb.RazorPages
                     var message = ex.Message;
                 }
             });
-            services.AddHangfire(c => c.UseMemoryStorage());
+            //services.AddHangfire(c => c.UseMemoryStorage());
             // Add Identity DbContext
             //services.AddDbContext<AppIdentityDbContext>(c =>
             //     c.UseMySQL("server=localhost;port=3306;database=testentityfw;user=root;password=anupam;"));
@@ -129,12 +129,12 @@ namespace Microsoft.eShopWeb.RazorPages
         public void Configure(IApplicationBuilder app,
             IHostingEnvironment env)
         {
-            app.UseHangfireServer();
+            //app.UseHangfireServer();
 
-            app.UseHangfireDashboard("/batchmonitor", new DashboardOptions
-            {
-                Authorization = new[] { new MyAuthorizationFilter() }
-            });
+            //app.UseHangfireDashboard("/batchmonitor", new DashboardOptions
+            //{
+            //    Authorization = new[] { new MyAuthorizationFilter() }
+            //});
 
             if (env.IsDevelopment())
             {
@@ -176,13 +176,13 @@ namespace Microsoft.eShopWeb.RazorPages
             }));
         }
 
-        public class MyAuthorizationFilter : IDashboardAuthorizationFilter
-        {
-            public bool Authorize(DashboardContext context)
-            {
-                return true;
-            }
-        }
+        //public class MyAuthorizationFilter : IDashboardAuthorizationFilter
+        //{
+        //    public bool Authorize(DashboardContext context)
+        //    {
+        //        return true;
+        //    }
+        //}
 
         public static string getconn()
         {

@@ -12,7 +12,7 @@ using MySql.Data.MySqlClient;
 using Microsoft.eShopWeb.ApplicationCore.Entities;
 using Microsoft.EntityFrameworkCore;
 using MySql.Data.EntityFrameworkCore.Extensions;
-using Hangfire;
+//using Hangfire;
 
 namespace Microsoft.eShopWeb.RazorPages
 {
@@ -20,6 +20,7 @@ namespace Microsoft.eShopWeb.RazorPages
     {
         public static void Main(string[] args)
         {
+            
             // Executedbscripts();
             //method to create tables
           //  entitycreationcumseeding();
@@ -185,7 +186,7 @@ namespace Microsoft.eShopWeb.RazorPages
 
         private static void batchjobsetup()
         {
-            RecurringJob.AddOrUpdate(() => orderbytefile(), Cron.Minutely);
+           // RecurringJob.AddOrUpdate(() => orderbytefile(), Cron.Minutely);
         }
 
         public static void orderbytefile()

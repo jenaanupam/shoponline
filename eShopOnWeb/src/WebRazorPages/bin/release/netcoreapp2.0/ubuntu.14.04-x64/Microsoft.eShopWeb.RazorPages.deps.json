@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0/ubuntu.14.04-x64",
-    "signature": "ecb8994468e4d4c36c5c805a1c82d2d929773456"
+    "signature": "5dcc949c04cbb083fd520c4004ea9e7a42802c07"
   },
   "compilationOptions": {
     "defines": [
@@ -24,8 +24,6 @@
       "Microsoft.eShopWeb.RazorPages/1.0.0": {
         "dependencies": {
           "ApplicationCore": "1.0.0",
-          "Hangfire.AspNetCore": "1.6.17",
-          "Hangfire.MemoryStorage.Core": "1.4.0",
           "Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.EntityFrameworkCore": "2.0.1",
@@ -44,41 +42,6 @@
         },
         "compile": {
           "lib/netstandard1.1/Ardalis.GuardClauses.dll": {}
-        }
-      },
-      "Hangfire.AspNetCore/1.6.17": {
-        "dependencies": {
-          "Hangfire.Core": "1.6.17",
-          "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.0",
-          "Microsoft.AspNetCore.Http.Abstractions": "2.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
-          "NETStandard.Library": "2.0.0",
-          "System.ComponentModel": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard1.3/Hangfire.AspNetCore.dll": {}
-        }
-      },
-      "Hangfire.Core/1.6.17": {
-        "dependencies": {
-          "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
-          "NETStandard.Library": "2.0.0",
-          "Newtonsoft.Json": "10.0.1",
-          "System.Threading.Thread": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard1.3/Hangfire.Core.dll": {}
-        }
-      },
-      "Hangfire.MemoryStorage.Core/1.4.0": {
-        "dependencies": {
-          "Hangfire.Core": "1.6.17",
-          "NETStandard.Library": "2.0.0"
-        },
-        "compile": {
-          "lib/netstandard1.3/Hangfire.MemoryStorage.Core.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -1953,29 +1916,8 @@
           "runtime.linux-x64.Microsoft.NETCore.DotNetHostResolver": "2.0.0"
         }
       },
-      "Microsoft.NETCore.Jit/1.0.2": {
-        "dependencies": {
-          "runtime.ubuntu.14.04-x64.Microsoft.NETCore.Jit": "1.0.2"
-        }
-      },
       "Microsoft.NETCore.Platforms/2.0.0": {},
-      "Microsoft.NETCore.Portable.Compatibility/1.0.1": {
-        "dependencies": {
-          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2"
-        },
-        "compile": {
-          "ref/netstandard1.0/System.ServiceModel.dll": {}
-        }
-      },
-      "Microsoft.NETCore.Runtime.CoreCLR/1.0.2": {
-        "dependencies": {
-          "Microsoft.NETCore.Jit": "1.0.2",
-          "Microsoft.NETCore.Windows.ApiSets": "1.0.1",
-          "runtime.ubuntu.14.04-x64.Microsoft.NETCore.Runtime.CoreCLR": "1.0.2"
-        }
-      },
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "Microsoft.NETCore.Windows.ApiSets/1.0.1": {},
       "Microsoft.Rest.ClientRuntime/2.3.8": {
         "dependencies": {
           "NETStandard.Library": "2.0.0",
@@ -2290,8 +2232,6 @@
       "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple/4.3.0": {},
       "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
-      "runtime.ubuntu.14.04-x64.Microsoft.NETCore.Jit/1.0.2": {},
-      "runtime.ubuntu.14.04-x64.Microsoft.NETCore.Runtime.CoreCLR/1.0.2": {},
       "runtime.ubuntu.14.04-x64.runtime.native.System/4.3.0": {},
       "runtime.ubuntu.14.04-x64.runtime.native.System.IO.Compression/4.3.0": {},
       "runtime.ubuntu.14.04-x64.runtime.native.System.Net.Http/4.3.0": {},
@@ -3563,8 +3503,6 @@
       "Microsoft.eShopWeb.RazorPages/1.0.0": {
         "dependencies": {
           "ApplicationCore": "1.0.0",
-          "Hangfire.AspNetCore": "1.6.17",
-          "Hangfire.MemoryStorage.Core": "1.4.0",
           "Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.EntityFrameworkCore": "2.0.1",
@@ -3583,49 +3521,6 @@
         },
         "runtime": {
           "lib/netstandard1.1/Ardalis.GuardClauses.dll": {}
-        }
-      },
-      "Hangfire.AspNetCore/1.6.17": {
-        "dependencies": {
-          "Hangfire.Core": "1.6.17",
-          "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.0",
-          "Microsoft.AspNetCore.Http.Abstractions": "2.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
-          "NETStandard.Library": "2.0.0",
-          "System.ComponentModel": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/Hangfire.AspNetCore.dll": {}
-        }
-      },
-      "Hangfire.Core/1.6.17": {
-        "dependencies": {
-          "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
-          "NETStandard.Library": "2.0.0",
-          "Newtonsoft.Json": "10.0.1",
-          "System.Threading.Thread": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/Hangfire.Core.dll": {}
-        },
-        "resources": {
-          "lib/netstandard1.3/es/Hangfire.Core.resources.dll": {
-            "locale": "es"
-          },
-          "lib/netstandard1.3/zh/Hangfire.Core.resources.dll": {
-            "locale": "zh"
-          }
-        }
-      },
-      "Hangfire.MemoryStorage.Core/1.4.0": {
-        "dependencies": {
-          "Hangfire.Core": "1.6.17",
-          "NETStandard.Library": "2.0.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/Hangfire.MemoryStorage.Core.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -5417,29 +5312,8 @@
           "runtime.linux-x64.Microsoft.NETCore.DotNetHostResolver": "2.0.0"
         }
       },
-      "Microsoft.NETCore.Jit/1.0.2": {
-        "dependencies": {
-          "runtime.ubuntu.14.04-x64.Microsoft.NETCore.Jit": "1.0.2"
-        }
-      },
       "Microsoft.NETCore.Platforms/2.0.0": {},
-      "Microsoft.NETCore.Portable.Compatibility/1.0.1": {
-        "dependencies": {
-          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2"
-        },
-        "runtime": {
-          "lib/netstandard1.0/System.ServiceModel.dll": {}
-        }
-      },
-      "Microsoft.NETCore.Runtime.CoreCLR/1.0.2": {
-        "dependencies": {
-          "Microsoft.NETCore.Jit": "1.0.2",
-          "Microsoft.NETCore.Windows.ApiSets": "1.0.1",
-          "runtime.ubuntu.14.04-x64.Microsoft.NETCore.Runtime.CoreCLR": "1.0.2"
-        }
-      },
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "Microsoft.NETCore.Windows.ApiSets/1.0.1": {},
       "Microsoft.Rest.ClientRuntime/2.3.8": {
         "dependencies": {
           "NETStandard.Library": "2.0.0",
@@ -5840,6 +5714,7 @@
           "runtimes/linux-x64/native/System.Native.so": {},
           "runtimes/linux-x64/native/System.Net.Http.Native.so": {},
           "runtimes/linux-x64/native/System.Net.Security.Native.so": {},
+          "runtimes/linux-x64/native/System.Private.CoreLib.dll": {},
           "runtimes/linux-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {},
           "runtimes/linux-x64/native/createdump": {},
           "runtimes/linux-x64/native/libclrjit.so": {},
@@ -5933,16 +5808,6 @@
       "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple/4.3.0": {},
       "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
-      "runtime.ubuntu.14.04-x64.Microsoft.NETCore.Jit/1.0.2": {},
-      "runtime.ubuntu.14.04-x64.Microsoft.NETCore.Runtime.CoreCLR/1.0.2": {
-        "runtime": {
-          "runtimes/ubuntu.14.04-x64/lib/netstandard1.0/System.Private.CoreLib.dll": {}
-        },
-        "native": {
-          "runtimes/ubuntu.14.04-x64/native/System.Private.CoreLib.ni.dll": {},
-          "runtimes/ubuntu.14.04-x64/native/mscorlib.ni.dll": {}
-        }
-      },
       "runtime.ubuntu.14.04-x64.runtime.native.System/4.3.0": {},
       "runtime.ubuntu.14.04-x64.runtime.native.System.IO.Compression/4.3.0": {},
       "runtime.ubuntu.14.04-x64.runtime.native.System.Net.Http/4.3.0": {},
@@ -7261,27 +7126,6 @@
       "path": "ardalis.guardclauses/1.1.1",
       "hashPath": "ardalis.guardclauses.1.1.1.nupkg.sha512"
     },
-    "Hangfire.AspNetCore/1.6.17": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-vyplbohNRCftM+TvAD2L0jyqWqfoWoZ57A5mgPfrSfRDCmrZfitQcLO2aQPdqHYaA2F9AAoMUGNRncHqE/1J4w==",
-      "path": "hangfire.aspnetcore/1.6.17",
-      "hashPath": "hangfire.aspnetcore.1.6.17.nupkg.sha512"
-    },
-    "Hangfire.Core/1.6.17": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-zthN3NcyxObUpqv3UJRpL8bjANOloIHcFL2SrD+AjvIJoFDCiy/PDh0sVPIO4r6aXZ+KjlNpyB1PMfD5PKCpfw==",
-      "path": "hangfire.core/1.6.17",
-      "hashPath": "hangfire.core.1.6.17.nupkg.sha512"
-    },
-    "Hangfire.MemoryStorage.Core/1.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-zQzoeVh1E1CDijSBZicEJebfxqPp/nitLgrzGZIlw5VaftRaic2Jk0V++vkV22IrkqhLLZnSK/jisQnbJ/06NA==",
-      "path": "hangfire.memorystorage.core/1.4.0",
-      "hashPath": "hangfire.memorystorage.core.1.4.0.nupkg.sha512"
-    },
     "Libuv/1.10.0": {
       "type": "package",
       "serviceable": true,
@@ -8416,13 +8260,6 @@
       "path": "microsoft.netcore.dotnethostresolver/2.0.0",
       "hashPath": "microsoft.netcore.dotnethostresolver.2.0.0.nupkg.sha512"
     },
-    "Microsoft.NETCore.Jit/1.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Ok2vWofa6X8WD9vc4pfLHwvJz1/B6t3gOAoZcjrjrQf7lQOlNIuZIZtLn3wnWX28DuQGpPJkRlBxFj7Z5txNqw==",
-      "path": "microsoft.netcore.jit/1.0.2",
-      "hashPath": "microsoft.netcore.jit.1.0.2.nupkg.sha512"
-    },
     "Microsoft.NETCore.Platforms/2.0.0": {
       "type": "package",
       "serviceable": true,
@@ -8430,33 +8267,12 @@
       "path": "microsoft.netcore.platforms/2.0.0",
       "hashPath": "microsoft.netcore.platforms.2.0.0.nupkg.sha512"
     },
-    "Microsoft.NETCore.Portable.Compatibility/1.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Vd+lvLcGwvkedxtKn0U8s9uR4p0Lm+0U2QvDsLaw7g4S1W4KfPDbaW+ROhhLCSOx/gMYC72/b+z+o4fqS/oxVg==",
-      "path": "microsoft.netcore.portable.compatibility/1.0.1",
-      "hashPath": "microsoft.netcore.portable.compatibility.1.0.1.nupkg.sha512"
-    },
-    "Microsoft.NETCore.Runtime.CoreCLR/1.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-A0x1xtTjYJWZr2DRzgfCOXgB0JkQg8twnmtTJ79wFje+IihlLbXtx6Z2AxyVokBM5ruwTedR6YdCmHk39QJdtQ==",
-      "path": "microsoft.netcore.runtime.coreclr/1.0.2",
-      "hashPath": "microsoft.netcore.runtime.coreclr.1.0.2.nupkg.sha512"
-    },
     "Microsoft.NETCore.Targets/1.1.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
-    },
-    "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-SaToCvvsGMxTgtLv/BrFQ5IFMPRE1zpWbnqbpwykJa8W5XiX82CXI6K2o7yf5xS7EP6t/JzFLV0SIDuWpvBZVw==",
-      "path": "microsoft.netcore.windows.apisets/1.0.1",
-      "hashPath": "microsoft.netcore.windows.apisets.1.0.1.nupkg.sha512"
     },
     "Microsoft.Rest.ClientRuntime/2.3.8": {
       "type": "package",
@@ -8849,20 +8665,6 @@
       "sha512": "sha512-nyFNiCk/r+VOiIqreLix8yN+q3Wga9+SE8BCgkf+2BwEKiNx6DyvFjCgkfV743/grxv8jHJ8gUK4XEQw7yzRYg==",
       "path": "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "hashPath": "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
-    },
-    "runtime.ubuntu.14.04-x64.Microsoft.NETCore.Jit/1.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-nPH4JNF2HbdOpWSTTFubCMitre9UnQ7SXmkw4kNamoEdtObmTsYj+hA/8Iols3R7Pp2wqdOQUWhfSy/MGnCBpg==",
-      "path": "runtime.ubuntu.14.04-x64.microsoft.netcore.jit/1.0.2",
-      "hashPath": "runtime.ubuntu.14.04-x64.microsoft.netcore.jit.1.0.2.nupkg.sha512"
-    },
-    "runtime.ubuntu.14.04-x64.Microsoft.NETCore.Runtime.CoreCLR/1.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-4dsDZys2qBrbXYob7z7cve1hcHiPgndWeHgqre9v+WVx2feFolTSFyc2goXWuIigd0+lHH+5ihajtjFQOAN6AQ==",
-      "path": "runtime.ubuntu.14.04-x64.microsoft.netcore.runtime.coreclr/1.0.2",
-      "hashPath": "runtime.ubuntu.14.04-x64.microsoft.netcore.runtime.coreclr.1.0.2.nupkg.sha512"
     },
     "runtime.ubuntu.14.04-x64.runtime.native.System/4.3.0": {
       "type": "package",
